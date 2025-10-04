@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Davina's Luxe.</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.jpg" alt="Logo" class="logo" />
+    <a href="cart.html" class="cart-button">🛒View Cart</a>
+    <button onclick="showUserDetails()" class="user-btn">ABOUT</button>
+  </header>
+
+  <h1 class="page-title"> Davina's Luxe</h1>
+  <h2 class="page-title">...Unveil your aura</h2>
+
+  <div id="product-list" class="products">
+    <!-- Products will be loaded here by JavaScript -->
+  </div>
+
+  <!-- Popup Modal -->
+<div id="popup" class="popup hidden">
+  <div class="popup-content">
+    <p>Product successfully added to cart!</p>
+    <button onclick="goToWhatsApp()">Go to WhatsApp</button>
+    <button onclick="closePopup()">Back to Shop</button>
+  </div>
+</div>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

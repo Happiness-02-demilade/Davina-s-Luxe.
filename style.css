@@ -1,0 +1,238 @@
+body {
+  background-color:antiquewhite;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #dacdcd;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  height: 40px;
+}
+
+.user-btn {
+  padding: 8px 12px;
+  background-color: #af0e08;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.page-title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  width: 200px;
+  text-align: center;
+  padding: 10px;
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  margin: 5px 0;
+}
+
+.add-btn {
+  background-color: rgb(128, 9, 0);
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.popup-content {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+}
+
+.popup-content button {
+  margin: 10px;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.popup-content button:first-child {
+  background-color: #d33f25; /* WhatsApp green */
+  color: white;
+}
+
+.popup-content button:last-child {
+  background-color: black;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+.product-detail {
+  max-width: 400px;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.product-detail img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#quantity {
+  width: 60px;
+  margin: 10px;
+  padding: 5px;
+}
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  background-color: #1b1a1a;
+  color: rgb(241, 235, 235);
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  z-index: 1000;
+}
+
+.back-button:hover {
+  background-color: #161515;
+}
+.cart-container {
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  background: #fff;
+  border-bottom: 1px solid #ddd;
+  font-size: 14px;
+}
+.cart-item-left {
+  text-align: left;
+}
+.cart-item-right {
+  text-align: right;
+  font-weight: bold;
+}
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+}
+
+.logo {
+  height: 40px;
+}
+
+.cart-button {
+  text-decoration: none;
+  background-color: #851e0c;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.cart-button:hover {
+  background-color: #d62b0d;
+}
+button.whatsapp-button {
+  background-color: #b4260d; /* WhatsApp green */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+button.whatsapp-button:hover {
+  background-color: #df372b;
+}
+button.add-to-cart {
+  background-color: #b82a07; /* Deep blue */
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+button.add-to-cart:hover {
+  background-color: #cc4321; /* Slightly darker on hover */
+}
+
