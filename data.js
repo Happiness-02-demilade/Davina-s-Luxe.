@@ -8,6 +8,5 @@ const products = [
   { id: 7, name: "Product 7", price: 20000, image: "2nd 20000.jpg", description: "" },
   { id: 8, name: "Product 8", price: 5000, image: "2nd 5000.jpg", description: "" },
   { id: 9, name: "Product 9", price: 5000, image: "3rd 5000.jpg", description: "" },
-  { id: 10, name: "Product 9", price: 5000, image: "3rd 5000.jpg", description: "" },
-
 ]
+
